@@ -53,7 +53,7 @@ export default UsingSSR
 
 export async function getServerData() {
   try {
-    const res = await fetch(`http://localhost:1337/api/pages`)
+    const res = await fetch(`https://strapiv4.herokuapp.com/api/articles`)
     if (!res.ok) {
       throw new Error(`Response failed`)
     }
